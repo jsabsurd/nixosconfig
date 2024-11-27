@@ -87,13 +87,16 @@
     syncthing
     mullvad-vpn
     ghc
+    hyprlock
+    #qbittorrent-qt5
     # fun cli
     neofetch
     cbonsai
     cowsay
     pipes
-    steamcmd
-    steam-tui
+    #steamcmd
+    #steam-tui
+    pokete
   ];
 
 #  programs.steam.enable = true;
@@ -128,6 +131,7 @@ fonts.packages = with pkgs; [
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
+  services.mullvad-vpn.enable = true;
   services.flatpak.enable = true;
   services.blueman.enable = true;
   services.thermald.enable = true;
